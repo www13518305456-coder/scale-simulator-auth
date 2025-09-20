@@ -10,7 +10,7 @@ app = Flask(__name__)
 CORS(app)  # 允许跨域，方便本地程序调用
 
 # 🔑 秘钥（生产环境请从环境变量读取）
-SECRET_KEY = os.getenv("JWT_SECRET", "https://github.com/www13518305456-coder/datacreate01.git")
+SECRET_KEY = os.getenv("JWT_SECRET", "JWT_SECRET")
 
 # 🗃️ 模拟用户数据库（实际项目请用 SQLite/MySQL）
 USERS = {
