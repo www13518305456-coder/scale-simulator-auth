@@ -16,7 +16,10 @@ SECRET_KEY = os.getenv("JWT_SECRET", "JWT_SECRET")
 USERS = {
     "user1": hashlib.sha256("password123".encode()).hexdigest(),  # 用户名: 密码哈希
     "admin": hashlib.sha256("admin456".encode()).hexdigest(),
-}
+"liyang": hashlib.sha256("138204".encode()).hexdigest(),
+"wangrong": hashlib.sha256("138204".encode()).hexdigest(),
+"cuixiyi": hashlib.sha256("138224".encode()).hexdigest(),
+"yuemaozheng": hashlib.sha256("138254".encode()).hexdigest(),}
 
 @app.route('/api/register', methods=['POST'])
 def register():
